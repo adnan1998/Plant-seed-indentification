@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { /* Apply on the body */
+  overflow-x: hidden;
+}
+.animated-background {
+  position: fixed; /* Use fixed for full viewport coverage */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport units */
+  height: 100vh; /* Use viewport units */
+  background: linear-gradient(to bottom, #092327, #0B5351);
+  background-size: 200% 200%;
+  animation: gradientAnimation 30s linear infinite; /* Adjust duration as needed */
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
