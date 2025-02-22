@@ -5,7 +5,7 @@ import Head from "next/head";
 import Skeleton from "@mui/material/Skeleton"; // MUI Skeleton
 
 // const geminiApiKey = process.env.NEXT_PUBLIC_API_KEY; 
-const geminiApiKey = process.env.PLANT_API_KEY; // Replace with your actual API key
+const geminiApiKey = process.env.NEXT_PUBLIC_PLANT_API_KEY; // Replace with your actual API key
 
 const Home = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
